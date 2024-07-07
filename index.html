@@ -9,5 +9,22 @@
   <body>
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
+     <script>
+    window.addEventListener('load', () => {
+  // 选择包含 "今日热榜" 的元素
+  const hotListSpan = document.querySelector('footer[data-v-dc58d328] .copyright > span:first-child');
+
+  // 选择包含 "imsyy" 的元素
+  const authorSpan = document.querySelector('footer[data-v-dc58d328] .copyright > span:last-child');
+
+  // 移除这两个元素
+  if (hotListSpan) {
+    hotListSpan.remove();
+  }
+  if (authorSpan) {
+    authorSpan.remove();
+  }
+});
+   <script>
   </body>
 </html>
